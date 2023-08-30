@@ -1,7 +1,7 @@
 body {
     background: rgb(255, 221, 236);
     color: rgb(164, 13, 13);
-    padding: 10px;
+    padding: 5px;
     font-family: 'Times New Roman', Times, serif;
 }
 #all-contents {
@@ -17,7 +17,8 @@ nav {
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
-    padding: 25px;
+    padding: 16px;
+    font-size: 19px
 }
 h1 {
     display: flex;
@@ -25,7 +26,9 @@ h1 {
     color: #bd0d0d;
     flex: 1;
     margin: 0;
+    font-size: 40px
 }
+
 #nav-ul {
     list-style-image: none;
 }
