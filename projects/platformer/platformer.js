@@ -71,7 +71,6 @@ $(function () {
 
     createCollectable("steve", 0, 90, 20, 0.7, 0);
     createCollectable("steve", 900, 300, 40, 0.7, 0);
-
     createCollectable("steve", 200, 500, 70, 0.7, 0);
     
     
