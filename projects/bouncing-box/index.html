@@ -76,24 +76,39 @@
 			turn it around! 
 			*/
 			function update() {
-				positionX = positionX + speed;
+				// Frame 1
+				positionX = positionX + speed; // positionX = 10
 				moveBoxTo(positionX);
 
-			};
+				// Frame 2
+				positionX = 10 + 10;        // positionX = 20
+				moveBoxTo(positionX);
 
-			/* 
-			This Function will be called each time the box is clicked. Each time it is called,
-			it should increase the points total, increase the speed, and move the box to
-			the left side of the screen.
-			*/
-			function handleBoxClick() {
-				positionX = 0;
-				changeBoxText(1);
-				changeBoxText(points);
-				points = points + 1;
-				speed = speed + 3;
-			};
-		})();
+				// The Box is Clicked
+				positionX = 0;              // positionX = 0
+
+				// back to update...
+				// Frame 3
+				positionX = 0 + 10;         // positionX = 10
+				moveBoxTo(positionX);
+
+				// Frame 4
+				positionX = 10 + 10;         // positionX = 20
+				moveBoxTo(positionX);
+
+				/* 
+				This Function will be called each time the box is clicked. Each time it is called,
+				it should increase the points total, increase the speed, and move the box to
+				the left side of the screen.
+				*/
+				function handleBoxClick() {
+					positionX = 0;
+					changeBoxText(1);
+					changeBoxText(points);
+					points = points + 1;
+					speed = speed + 3;
+				};
+			}) ();
 	</script>
 </body>
 
