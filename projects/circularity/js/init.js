@@ -29,7 +29,10 @@ var init = function (window) {
           }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-            drawCircle(5);
+        
+        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
+            // do something
+        }
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -42,20 +45,20 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circle[0]);
-            physikz.updatePosition(circle[1]);
-            physikz.updatePosition(circle[2]);
-            physikz.updatePosition(circle[3]);
-            physikz.updatePosition(circle[4]);
-            
+            physikz.updatePosition(circles[0]);
+            physikz.updatePosition(circles[1]);
+            physikz.updatePosition(circles[2]);
+            physikz.updatePosition(circles[3]);
+            physikz.updatePosition(circles[4]);
+        }
+        
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            
-            game.checkCirclePosition(circle[0]);
-            game.checkCirclePosition(circle[1]);
-            game.checkCirclePosition(circle[2]);
-            game.checkCirclePosition(circle[3]);
-            game.checkCirclePosition(circle[4]);
-
+            game.checkCirclePosition(circles[0]);
+            game.checkCirclePosition(circles[1]);
+            game.checkCirclePosition(circles[2]);
+            game.checkCirclePosition(circles[3]);
+            game.checkCirclePosition(circles[4]);
+    
             // TODO 9 : Iterate over the array
            
             
@@ -74,7 +77,17 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            
+            if ( circle.y > canvas.width ) {
+                circle.y = 0;
+            }
+
+            if ( circle.canvas.height > canvas.width ) {
+                circle.canvas.height = 0;
+            }
+
+            if ( circle.canvas.width > canvas.width ) {
+                circle.canvas.width = 0;
+            }
 
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
