@@ -28,6 +28,10 @@ var init = function (window) {
 
           }
 
+          for (var i = 0; i < circles.length; i++) {
+            // code to repeat using i
+          }
+
         // TODO 3 / 7 : Call the drawCircle() function 
         
         for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
