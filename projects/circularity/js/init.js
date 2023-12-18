@@ -25,7 +25,6 @@ var init = function (window) {
 
         // TODO 2 : Create a function that draws a circle 
         function drawCircle() {
-         
         }
 
         for (var i = 0; i < circles.length; i++) {
@@ -61,16 +60,14 @@ var init = function (window) {
             //game.checkCirclePosition(circles[2]);
             //game.checkCirclePosition(circles[3]);
             //game.checkCirclePosition(circles[4]);
-
-        }
+            physikz.updatePosition(circles[i]) = ();
+            game.checkCirclePosition(circles[i]) = ();
+        
         for (var i = 0; i < circles.length; i++) {
             // code to repeat using i
         }
-
+    }
         // TODO 9 : Iterate over the array
-
-        physikz.updatePosition(circles[i]) = ();
-        game.checkCirclePosition(circles[i]) = ();
 
 
     /* 
